@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Post from './pages/Post'
+import SinglePost from './pages/SinglePost'
 
 const router = new VueRouter({
     mode: 'history',
@@ -21,14 +22,19 @@ const router = new VueRouter({
             component: About,
         },
         {
-            path: '/contact',
+            path: '/contacts',
             name: 'contact',
             component: Contact,
         },
         {
-            path: '/post',
+            path: '/posts',
             name: 'post',
             component: Post,
+        },
+        {
+            path: '/post/:slug',
+            name: 'post-details',
+            component: SinglePost,
         },
     ],
 });

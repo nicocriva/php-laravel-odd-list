@@ -7,7 +7,7 @@
                         <h4 class="card-title mb-1">{{post.title}}</h4>
                         <div class="card-text text-muted mb-2">{{data(post.created_at)}}</div>
                         <p class="card-text">{{cut(post.content, 180)}}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Show More</a>
                     </div>
                 </div>
             </div>
